@@ -3,7 +3,6 @@ Provides:	gol
 Version:	0.8.5
 Release:	1%{?dist}
 Summary:	Linux compatible Growl
-Group:		GNOME Desktop
 License:	BSD style license
 URL:		http://mattn.github.com/growl-for-linux
 Source0:	https://github.com/mattn/%{name}/archive/%{version}.tar.gz
@@ -17,7 +16,7 @@ Growl For Linux is Linux-compatible Growl. Growl is a notification system for Ma
 
 
 %prep
-%setup -q
+%autosetup
 ./autogen.sh
 
 
